@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni', 'Garamond', 'Georgia', 'Times New Roman', Times, serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Contact Us Section */
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('bg-003-free-img.png') center center/cover no-repeat;
+    /* Background image */
+    display: flex;
+    align-items: flex-start;
+    /* Align content to the top */
+    justify-content: flex-start;
+    /* Align content to the left */
+    padding: 100px 50px;
+    /* Adjust as needed */
+}
+
+.contact-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Optional overlay to darken the background */
+    z-index: 1;
+}
+
+.contact-section .contact-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    color: white;
+    /* Change content text color to white */
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+}
+
+.contact-content h1 {
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    background-color: #e6b07b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links,
+.footer-menu,
+.footer-contact {
+    text-align: left;
+}
+
+.footer-links h4,
+.footer-menu h4,
+.footer-contact h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer-contact a {
+    color: #d19a66;
+    text-decoration: none;
+}

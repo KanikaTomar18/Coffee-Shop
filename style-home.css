@@ -1,0 +1,541 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Bodoni','Garamond','Georgia','Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Aligns the logo to the left */
+}
+
+.nav-links {
+    flex: 15; /* Adjusted to allow more space for the links */
+    display: flex;
+    justify-content: flex-start; /* Aligns the links to the left */
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 30px; /* Adds space between nav items */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f7c08a;
+}
+
+.order-btn {
+    flex: 5;
+    display: flex;
+    justify-content: flex-end; /* Aligns the order button to the right */
+}
+
+.order-online {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-online:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    background: url('bg-05-free-img.jpg') center center/cover no-repeat;
+    height: 90vh; /* Decreased the height */
+    display: flex;
+    align-items: flex-start; /* Moves the content upwards */
+    justify-content: center;
+    padding-top: 100px; /* Adjust top padding to move content further upwards */
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.book-table {
+    padding: 15px 30px;
+    background-color: #f7c08a;
+    color: black;
+    border: 2px solid #e6b07b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-table:hover {
+    background-color: rgb(6, 68, 68);
+    border-color: rgb(6, 68, 68);
+    color: white;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    position: relative;
+    background: url('coffee-house-about-bg.jpg') center center/cover no-repeat;
+    background-color: #f7b9b9bb; /* Fallback solid background color */
+    overflow: hidden;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.about-content {
+    width: 45%;
+    padding-right: 50px;
+    color: #333;
+    position: relative;
+    z-index: 3; /* Ensure content overlaps images */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional semi-transparent background for better readability */
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow to content */
+    border-radius: 10px;
+    left: -50px; /* Move content left over the image */
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d19a66;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content a {
+    color: #d19a66;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-content a:hover {
+    color: #b57d50;
+}
+
+.about-images {
+    width: 60%;
+    position: relative;
+}
+
+/* First image (Image 1) */
+.image1 {
+    position: relative;
+    top: -50px; /* Adjust to overlap hero section */
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image1 img {
+    width: 100%; /* Make the image bigger */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Second image (Image 2) */
+.image2 {
+    position: absolute;
+    top: 150px; /* Position it further down */
+    left: 20%; /* Adjust the left positioning to make room for bigger image */
+    z-index: 2;
+}
+
+.image2 img {
+    width: 80%; /* Increase size */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Menu Section */
+.featured-menu {
+    margin-left: 20px;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.featured-menu h2 {
+    font-size: 4rem; /* Make heading bigger */
+    font-style: italic; /* Italic style for the heading */
+    margin-bottom: 30px;
+    color: #d19a66; /* Same font color as 'About' section */
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align all items */
+}
+
+.menu-item {
+    width: 300px;
+    text-align: center;
+    margin: 0 15px 30px; /* Adjust spacing for center alignment */
+    position: relative;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #d19a66; /* Same font color as 'About' section for product name */
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Add a thin line between items */
+.menu-item::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #d19a66; /* Thin line color similar to 'About' */
+    position: absolute;
+    right: -15px; /* Positioning the line between items */
+    top: 0;
+}
+
+.menu-item:last-child::after {
+    content: none; /* Remove line after the last item */
+}
+
+
+/* Container and Backgrounds */
+.container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    perspective: 1px;
+}
+
+.background1, .background2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    transform: translateZ(-1px) scale(2); /* Parallax Effect */
+}
+
+.background1 {
+    background-image: url('bg-07-free-img.jpg');
+    filter: brightness(90%);
+    opacity: 0.5;
+}
+
+.background2 {
+    background-image: url('bg-003-free-img.png');
+    filter:brightness(200%);
+    opacity: 0.2;
+     
+}
+
+/* Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #402010;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideInLeft 1.5s forwards 0.3s; /* Slide in from left */
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    opacity: 0;
+    animation: slideInLeft 1.5s forwards 0.5s; /* Slide in from left */
+}
+
+/* Product */
+.product-container {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.product {
+    width: 400px;
+    height: 500px;
+    background-image: url('product-005-free-img-1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px) scale(1.05); /* Hover effect */
+}
+
+/* Button */
+.button-container {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f4b41a;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #d19a66;
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Arrow */
+.arrow-container {
+    display: inline-block;
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url('arrow-01-free-img.png');
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Instagram Section */
+.instagram-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .instagram-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .instagram-gallery {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .instagram-item {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .instagram-text {
+    text-align: left;
+  }
+  
+  .instagram-text i {
+    font-size: 4rem;
+    color: #d19a66;
+  }
+  
+  .instagram-text p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .instagram-text span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-links, .footer-menu, .footer-contact {
+    text-align: left;
+  }
+  
+  .footer-links h4, .footer-menu h4, .footer-contact h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-contact p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .footer-contact a {
+    color: #d19a66;
+    text-decoration: none;
+  }
+  
