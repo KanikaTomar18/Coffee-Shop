@@ -28,7 +28,7 @@ Coffee-Shop/
 ├── about.html
 ├── style-about.css
 ├── menu.html
-├── style-menu.css
+├── styl-menu.css
 ├── contact.html
 ├── style-contact.css
 ├── images/
@@ -36,6 +36,7 @@ Coffee-Shop/
 ```
 
 Purpose of the Project
+
 This project was created to practice:
 * HTML page structure
 * CSS styling and layouts
@@ -51,7 +52,9 @@ git clone https://github.com/kanikatomar18/Coffee-Shop.git
 3. Run `index.html` in any web browser.
 
 Preview
+
 The website presents a stylish coffee shop landing page with an attractive layout and coffee-themed design elements.
+
 Future Improvements
 * Make the website fully responsive
 * Add JavaScript for interactivity
@@ -60,6 +63,7 @@ Future Improvements
 * Improve animations and user experience
 
 Author
+
 **Kanika Tomar**
 
 * GitHub: https://github.com/kanikatomar18
@@ -67,4 +71,4 @@ Author
 
 ---
 
-⭐ If you like this project, feel free to star the repository.
+If you like this project, feel free to star the repository.
