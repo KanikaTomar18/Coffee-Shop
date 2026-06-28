@@ -513,7 +513,14 @@ header {
 
 @media (max-width: 900px) {
     header {
+        position: relative;
         padding: 16px 24px;
+        background-color: rgba(20, 10, 5, 0.95);
+    }
+
+    .hero {
+        padding-top: 40px;
+        min-height: 80vh;
     }
 
     .about-section {
@@ -558,8 +565,9 @@ header {
 
 @media (max-width: 600px) {
     header {
+        position: relative;
         padding: 14px 16px;
-        position: relative; /* so nav doesn't float over hero weirdly on very small screens */
+        background-color: rgba(64, 63, 62, 0.95);
     }
 
     .navbar {
