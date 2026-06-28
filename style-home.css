@@ -515,7 +515,7 @@ header {
     header {
         position: relative;
         padding: 16px 24px;
-        background-color: rgba(20, 10, 5, 0.95);
+        background-color:  rgba(64, 63, 62, 0.95);
     }
 
     .hero {
